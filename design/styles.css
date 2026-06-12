@@ -40,11 +40,58 @@ body {
     width: 100%;
 }
 
-.information-container {
-    border: 1px solid red;
+.content {
     padding: 2.5rem 2rem;
 }
 
+header {
+    margin-bottom: 2rem;
+}
+
+.header-title {
+    color: var(--stone-900);
+    font-family: var(--young-serif);
+    font-size: 2.25rem;
+    font-weight:500;
+    line-height: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.header-description {
+    color: var(--stone-600);
+    font-family: var(--outfit);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+.preparation {
+    background-color: var(--rose-50);
+    font-family: var(--outfit);
+    padding: 1.5rem;
+    border-radius: .75rem;
+}
+
+.preparation-time {
+    color: var(--rose-800);
+    line-height: 100%;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.preparation-list {
+    list-style-position: inside;
+    margin-left: .5rem;
+}
+
+.preparation-list li {
+    border: 1px solid red;
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+li::marker {}
 
 
 .attribution { 

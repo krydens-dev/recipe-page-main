@@ -11,22 +11,27 @@
 <link rel="stylesheet" href="design/styles.css">
 </head>
 <body>
-  <main class="card">
-      <img class="recipe-image" src="assets/images/image-omelette.jpeg" alt="Omelette">
-      <div class="information-container">
-        <h1 class="">Simple Omelette Recipe</h1>
-        <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
-        to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
-        <div class="section">
-          <h3>Preparation time</h3>
-          <ul>
+  <main>
+    <article class="card">
+      <figure>
+        <img class="recipe-image" src="assets/images/image-omelette.jpeg" alt="A cooked omelette on a plate">
+      </figure>
+      <div class="content">
+        <header>
+          <h1 class="header-title">Simple Omelette Recipe</h1>
+          <p class="header-description">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+          to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+        </header>
+        <section class="preparation">
+          <h3 class="preparation-time">Preparation time</h3>
+          <ul class="preparation-list">
             <li>Total: Approximately 10 minutes</li>
             <li>Preparation: 5 minutes</li>
             <li>Cooking: 5 minutes</li>
           </ul>
-        </div>
-        <div class="section">
-          <h3>Ingredients</h3>
+        </section>
+        <section class="section">
+          <h2>Ingredients</h2>
           <ul>
             <li>2-3 large eggs</li>
             <li>Salt, to taste</li>
@@ -34,9 +39,9 @@
             <li>1 tablespoon of butter or oil</li>
             <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
           </ul>
-        </div>
-        <div>
-          <h3>Instructions</h3>
+        </section>
+        <section>
+          <h2>Instructions</h2>
           <ol>
             <li>Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
             You can add a tablespoon of water or milk for a fluffier texture.</li>
@@ -49,23 +54,33 @@
             fillings. Let it cook for another minute, then slide it onto a plate.</li>
             <li>Enjoy: Serve hot, with additional salt and pepper if needed.</li>
           </ol>
-        </div>
-        Nutrition
-
-        The table below shows nutritional values per serving without the additional fillings.
-
-        Calories
-        277kcal
-
-        Carbs
-        0g
-
-        Protein
-        20g
-
-        Fat
-        22g
+        </section>
+        <section>
+          <h2>Nutrition</h2>
+          <p>The table below shows nutritional values per serving without the additional fillings.</p>
+          <table>
+            <tbody>
+              <tr>
+                <th>Calories</th>
+                <td>277kcal</td>
+              </tr>
+              <tr>
+                <th>Carbs</th>
+                <td>0g</td>
+              </tr>
+              <tr>
+                <th>Protein</th>
+                <td>20g</td>
+              </tr>
+              <tr>
+                <th>Fat</th>
+                <td>22g</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
       </div>
+    </article>
   </main>
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
