@@ -70,6 +70,7 @@ header {
     font-family: var(--outfit);
     padding: 1.5rem;
     border-radius: .75rem;
+    margin-bottom: 2rem;
 }
 
 .preparation-time {
@@ -81,17 +82,77 @@ header {
 }
 
 .preparation-list {
-    list-style-position: inside;
+    list-style-type: none;
+    line-height: 150%
+}
+
+
+.preparation-list div {
+    display: flex;
+    gap: 1.5rem;
+    
+}
+
+.preparation-list div:not(:last-child) {
+    margin-bottom: .5rem;
+}
+
+.preparation-list .bullet {
+    color: var(--rose-800);
     margin-left: .5rem;
+    align-self: center;
+    font-size: 1.3rem;
 }
 
 .preparation-list li {
-    border: 1px solid red;
-    font-size: 1rem;
-    line-height: 150%;
+    color: var(--stone-600);
 }
 
-li::marker {}
+.preparation-list li span {
+    font-weight: bold;
+}
+
+.ingredients {
+    border: 1px solid red;
+}
+
+.ingredients-heading {
+    color: var(--brown-800);
+    font-family: var(--young-serif);
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.ingredients-list {
+    list-style-position: inside;
+}
+
+.ingredients-list li:not(:last-child) {
+    margin-bottom: .5rem;
+}
+
+.ingredients-list li {
+    padding-left: .5rem;
+    color: var(--stone-900);
+    font-family: var(--outfit);
+    font-size: 1rem;
+    line-height: 150%;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.ingredients-list li::marker {
+    color: var(--brown-800);
+    font-size: 1.3rem;
+}
+
+.ex {
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 .attribution { 
