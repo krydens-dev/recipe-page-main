@@ -126,7 +126,18 @@ header {
 }
 
 .ingredients-list {
-    list-style-position: inside;
+    list-style-type: none;
+}
+
+.ingredients-list div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: .5rem;
+}
+
+.ingredients-list .bullet {
+    margin-left: .5rem;
 }
 
 .ingredients-list li:not(:last-child) {
@@ -141,16 +152,6 @@ header {
     line-height: 150%;
     font-weight: 400;
     text-align: justify;
-}
-
-.ingredients-list li::marker {
-    color: var(--brown-800);
-    font-size: 1.3rem;
-}
-
-.ex {
-    display: flex;
-    flex-direction: column;
 }
 
 
