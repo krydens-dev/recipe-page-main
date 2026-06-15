@@ -82,8 +82,9 @@ header {
 }
 
 .preparation-list {
-    list-style-type: none;
-    line-height: 150%
+   
+    line-height: 150%;
+    padding-left: 18px;
 }
 
 
@@ -106,6 +107,7 @@ header {
 
 .preparation-list li {
     color: var(--stone-600);
+    padding-left: 20px;
 }
 
 .preparation-list li span {
