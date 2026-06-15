@@ -82,37 +82,36 @@ header {
 }
 
 .preparation-list {
-   
+    font-family: var(--outfit);
+    list-style: none;
     line-height: 150%;
-    padding-left: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
 }
-
 
 .preparation-list div {
     display: flex;
-    gap: 1.5rem;
-    
-}
-
-.preparation-list div:not(:last-child) {
-    margin-bottom: .5rem;
+    align-items: center;
+    gap: 1.6rem; /* 1 */
 }
 
 .preparation-list .bullet {
+    padding-left: .5rem;
     color: var(--rose-800);
-    margin-left: .5rem;
-    align-self: center;
-    font-size: 1.3rem;
+    font-size: 1.25rem;
+}
+
+.preparation-list .bold {
+    color: var(--stone-600);
+    font-weight: bold;
 }
 
 .preparation-list li {
+    font-size: 1rem;
     color: var(--stone-600);
-    padding-left: 20px;
 }
 
-.preparation-list li span {
-    font-weight: bold;
-}
 
 .ingredients {
     border: 1px solid red;
