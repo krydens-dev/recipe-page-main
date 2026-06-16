@@ -71,6 +71,9 @@ header {
     padding: 1.5rem;
     border-radius: .75rem;
     margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .preparation-time {
@@ -78,7 +81,6 @@ header {
     line-height: 100%;
     font-size: 1.25rem;
     font-weight: 600;
-    margin-bottom: 1rem;
 }
 
 .preparation-list {
@@ -87,75 +89,73 @@ header {
     line-height: 150%;
     display: flex;
     flex-direction: column;
-    gap: .5rem;
-}
-
-.preparation-list div {
-    display: flex;
-    align-items: center;
-    gap: 1.6rem; /* 1 */
-}
-
-.preparation-list .bullet {
-    padding-left: .5rem;
-    color: var(--rose-800);
-    font-size: 1.25rem;
-}
-
-.preparation-list .bold {
-    color: var(--stone-600);
-    font-weight: bold;
+    gap: .2rem;
+    
 }
 
 .preparation-list li {
     font-size: 1rem;
     color: var(--stone-600);
+    display: flex;
+    gap: 1.7rem;
+    align-items: center;
 }
 
 
+.preparation-list .bullet {
+    padding-left: .5rem;
+    color: var(--rose-800);
+    font-size: 1.25rem;
+    line-height: 150%;
+    
+}
+
+.preparation-list .bold {
+    color: var(--stone-600);
+    font-weight: bold;
+    display: inline-block;
+
+}
+
 .ingredients {
-    border: 1px solid red;
+  font-family: var(--young-serif);
+  margin-bottom: 2rem;
 }
 
 .ingredients-heading {
+    margin-bottom: 1.5rem;
     color: var(--brown-800);
-    font-family: var(--young-serif);
     font-size: 1.75rem;
     font-weight: 400;
     line-height: 100%;
-    margin-bottom: 1.5rem;
 }
 
 .ingredients-list {
-    list-style-type: none;
-}
-
-.ingredients-list div {
+    list-style: none;
     display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: .5rem;
-}
-
-.ingredients-list .bullet {
-    margin-left: .5rem;
-}
-
-.ingredients-list li:not(:last-child) {
-    margin-bottom: .5rem;
+    flex-direction: column;
+    gap: .5rem;
 }
 
 .ingredients-list li {
-    padding-left: .5rem;
-    color: var(--stone-900);
+    display: flex;
+    gap: 1rem;
+    align-items: center;
     font-family: var(--outfit);
     font-size: 1rem;
     line-height: 150%;
-    font-weight: 400;
-    text-align: justify;
+    color: var(--stone-600);
 }
 
+.ingredients-list .bullet {
+   color: var(--brown-800);
+   padding-left: .5rem;
+   font-size: 1.25rem;
+}
 
+.line {
+    
+}
 
 .attribution { 
     font-size: 0.6875rem; text-align: center; 
