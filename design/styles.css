@@ -110,19 +110,18 @@ header {
     
 }
 
-.preparation-list .bold {
+.bold {
     color: var(--stone-600);
     font-weight: bold;
-    display: inline-block;
 
 }
 
 .ingredients {
   font-family: var(--young-serif);
-  margin-bottom: 2rem;
 }
 
-.ingredients-heading {
+.ingredients-heading, .instructions-heading {
+    font-family: var(--young-serif);
     margin-bottom: 1.5rem;
     color: var(--brown-800);
     font-size: 1.75rem;
@@ -154,8 +153,32 @@ header {
 }
 
 .line {
-    
+    border: .5px solid var(--stone-150);
+    margin: 2rem 0;
 }
+
+.instructions-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.instructions-list li {
+    display: flex;
+    gap: 1.2rem;
+    font-family: var(--outfit);
+    font-size: 1rem;
+    line-height: 150%;
+    color: var(--stone-600);
+}
+
+.number {
+    padding-left: .5rem;
+    color: var(--brown-800);
+    font-weight: bold;
+}
+
 
 .attribution { 
     font-size: 0.6875rem; text-align: center; 
