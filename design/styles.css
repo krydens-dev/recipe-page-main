@@ -28,7 +28,12 @@ html {
 }
 
 body {
+        background-color: var(--stone-100);
+    }
 
+main {
+    display: flex;
+    justify-content: center;
 }
 
 .card {
@@ -57,7 +62,8 @@ header {
     margin-bottom: 1.5rem;
 }
 
-.header-description {
+.header-description, 
+.nutrition-text {
     color: var(--stone-600);
     font-family: var(--outfit);
     font-weight: 400;
@@ -120,7 +126,9 @@ header {
   font-family: var(--young-serif);
 }
 
-.ingredients-heading, .instructions-heading {
+.ingredients-heading, 
+.instructions-heading, 
+.nutrition-heading {
     font-family: var(--young-serif);
     margin-bottom: 1.5rem;
     color: var(--brown-800);
@@ -179,6 +187,41 @@ header {
     font-weight: bold;
 }
 
+table {
+    border-collapse: separate;
+    width: 100%;
+    border-spacing: 0 1rem;
+    margin-top: .5rem;
+
+ 
+}
+
+td {
+    border-bottom: 1px solid var(--stone-150);
+    padding-bottom: .5rem;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+.head {
+    padding-left: 2rem;
+    font-family: var(--outfit);
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--stone-600);
+    line-height: 150%;
+}
+
+.value {
+    padding-right: 1.7rem;
+    font-weight: bold;
+    color: var(--brown-800);
+    font-size: 1rem;
+    line-height: 150%;
+    font-family: var(--outfit);
+}
 
 .attribution { 
     font-size: 0.6875rem; text-align: center; 
@@ -186,4 +229,32 @@ header {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 768px) {
+
+
+    main {
+        padding: 8rem 3rem;
+    }
+
+    
+    .card {
+        background-color: var(--white);
+        max-width: 38.5rem;
+        border-radius: 1.5rem;
+        padding: 2.5rem;
+    }
+
+    .content {
+        padding: 2.5rem 0 0 0;
+    }
+
+    .recipe-image {
+        border-radius: .75rem;
+        height: 18.75rem;
+        object-fit: cover;
+  object-position: center bottom;
+       
+    }
 }
