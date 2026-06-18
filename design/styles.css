@@ -249,7 +249,7 @@ th {
         background-color: var(--white);
         max-width: 38.5rem;
         border-radius: 1.5rem;
-        padding: 2.5rem 2.5rem .8rem 2.5rem;
+        padding: 2.5rem 2.5rem .8rem;
     }
 
     .content {
