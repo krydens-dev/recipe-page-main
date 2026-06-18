@@ -226,16 +226,6 @@ th {
     color: var(--brown-800);
 }
 
-.attribution { 
-    font-size: 0.6875rem; 
-    text-align: center; 
-    font-weight: bold;
-}
-
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
-}
-
 @media (min-width: 600px) {
 
     main {
