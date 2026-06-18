@@ -38,13 +38,12 @@ main {
 
 .card {
     width: 100%;
-    max-width: 23.43rem;
     background-color: var(--white);
 }
 
 .recipe-image {
     width: 100%;
-    
+
 }
 
 .content {
@@ -237,8 +236,7 @@ th {
     color: hsl(228, 45%, 44%); 
 }
 
-@media (min-width: 768px) {
-
+@media (min-width: 600px) {
 
     main {
         padding: 8rem 3rem;
@@ -259,8 +257,8 @@ th {
 
     .recipe-image {
         border-radius: .75rem;
-        height: 18.75rem;
         object-fit: cover;
+
     }
 
     .header-title {
@@ -271,6 +269,5 @@ th {
 @media (min-width: 1440px) {
     .card {
         max-width: 46rem;
-        
     }
 }
