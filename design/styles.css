@@ -39,10 +39,12 @@ main {
 .card {
     width: 100%;
     max-width: 23.43rem;
+    background-color: var(--white);
 }
 
 .recipe-image {
     width: 100%;
+    
 }
 
 .content {
@@ -142,6 +144,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: .5rem;
+    
 }
 
 .ingredients-list li {
@@ -187,6 +190,8 @@ header {
     font-weight: bold;
 }
 
+/* ---------- Nutrition table ---------- */
+
 table {
     border-collapse: separate;
     width: 100%;
@@ -196,31 +201,30 @@ table {
  
 }
 
-td {
+td, th {
     border-bottom: 1px solid var(--stone-150);
     padding-bottom: .5rem;
+    text-align: left;
+    font-family: var(--outfit);
+    font-size: 1rem;
+    line-height: 150%;
 }
 
+tr:last-child th, 
 tr:last-child td {
   border-bottom: none;
 }
 
-.head {
+th {
     padding-left: 2rem;
-    font-family: var(--outfit);
     font-weight: 400;
-    font-size: 1rem;
     color: var(--stone-600);
-    line-height: 150%;
 }
 
 .value {
     padding-right: 1.7rem;
     font-weight: bold;
     color: var(--brown-800);
-    font-size: 1rem;
-    line-height: 150%;
-    font-family: var(--outfit);
 }
 
 .attribution { 
@@ -250,11 +254,21 @@ tr:last-child td {
         padding: 2.5rem 0 0 0;
     }
 
+
     .recipe-image {
         border-radius: .75rem;
         height: 18.75rem;
         object-fit: cover;
-  object-position: center bottom;
-       
+    }
+
+    .header-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .card {
+        max-width: 46rem;
+        
     }
 }
